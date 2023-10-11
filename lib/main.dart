@@ -16,7 +16,8 @@ import 'training/day11.dart';
 import 'training/day14.dart';
 import 'training/day15.dart';
 import 'training/day16.dart';
-import 'training/day17.dart';
+import 'training/day18.dart';
+import 'training/day19.dart';
 
 void main() {
   runApp(const MyApp());
@@ -93,8 +94,16 @@ class MyApp extends StatelessWidget {
               builder: (context) => const Day16(),
             ),
             _GalleryItem(
-              title: 'Day17 カウンターアプリ(Riverpod)',
-              builder: (context) => const Day17(),
+              title: 'Day18 カウンターアプリ(Riverpod)',
+              builder: (context) => const Day18(),
+            ),
+            _GalleryItem(
+              title: 'Day19 Todoアプリ(Riverpod)',
+              builder: (context) => const Day19(),
+            ),
+            _GalleryItem(
+              title: 'Day20 無限スクロール(Riverpod)',
+              builder: (context) => const Day18(),
             ),
           ]),
         ),
