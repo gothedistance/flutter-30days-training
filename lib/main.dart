@@ -14,6 +14,7 @@ import 'training/day08.dart';
 import 'training/day09.dart';
 import 'training/day11.dart';
 import 'training/day13.dart';
+import 'training/day14_custom_scroll_view.dart';
 import 'training/day14_page_view.dart';
 import 'training/day14_tab_bar_view.dart';
 import 'training/day15.dart';
@@ -96,6 +97,11 @@ class MyApp extends StatelessWidget {
               title: 'Day14 TabBarView',
               builder: (context) => const Day14TabBarView(),
             ),
+            _GalleryItem(
+              title: 'Day14 Custom Scroll View',
+              builder: (context) => const Day14CustomScrollView(),
+            ),
+//
             _GalleryItem(
               title: 'Day15 Todoアプリ(setState)',
               builder: (context) => const Day15(),
