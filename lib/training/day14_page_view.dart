@@ -15,55 +15,58 @@ class Day14PageViewState extends State<Day14PageView> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: Stack(
-        children: [
-          PageView(
-            controller: controller,
-            onPageChanged: (value) {
-              setState(() {
-                currentPage = value.toInt();
-              });
-            },
-            children: <Widget>[
-              const Center(
-                child: Text(
-                  'First Page',
-                  style: TextStyle(fontSize: 24),
-                ),
-              ),
-              ColoredBox(
-                color: Colors.blue.shade100,
-                child: const Center(
+      appBar: AppBar(),
+      body: SafeArea(
+        child: Stack(
+          children: [
+            PageView(
+              controller: controller,
+              onPageChanged: (value) {
+                setState(() {
+                  currentPage = value.toInt();
+                });
+              },
+              children: <Widget>[
+                const Center(
                   child: Text(
-                    'Second Page',
+                    'First Page',
                     style: TextStyle(fontSize: 24),
                   ),
                 ),
-              ),
-              ColoredBox(
-                color: Colors.red.shade200,
-                child: const Center(
-                  child: Text(
-                    'Third Page',
-                    style: TextStyle(fontSize: 24),
+                ColoredBox(
+                  color: Colors.blue.shade100,
+                  child: const Center(
+                    child: Text(
+                      'Second Page',
+                      style: TextStyle(fontSize: 24),
+                    ),
                   ),
                 ),
-              ),
-            ],
-          ),
-          Align(
-            alignment: Alignment.bottomCenter,
-            child: Padding(
-                padding: const EdgeInsets.only(bottom: 20),
-                child: PageDotIndicator(
-                  length: 3,
-                  currentPage: currentPage,
-                  onTap: (page) {
-                    controller.jumpToPage(page);
-                  },
-                )),
-          )
-        ],
+                ColoredBox(
+                  color: Colors.red.shade200,
+                  child: const Center(
+                    child: Text(
+                      'Third Page',
+                      style: TextStyle(fontSize: 24),
+                    ),
+                  ),
+                ),
+              ],
+            ),
+            Align(
+              alignment: Alignment.bottomCenter,
+              child: Padding(
+                  padding: const EdgeInsets.only(bottom: 20),
+                  child: PageDotIndicator(
+                    length: 3,
+                    currentPage: currentPage,
+                    onTap: (page) {
+                      controller.jumpToPage(page);
+                    },
+                  )),
+            )
+          ],
+        ),
       ),
     );
   }
