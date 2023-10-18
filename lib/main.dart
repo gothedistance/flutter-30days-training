@@ -13,7 +13,8 @@ import 'training/day07_list_view.dart';
 import 'training/day08.dart';
 import 'training/day09.dart';
 import 'training/day11.dart';
-import 'training/day14.dart';
+import 'training/day13.dart';
+import 'training/day14_page_view.dart';
 import 'training/day15.dart';
 import 'training/day16.dart';
 import 'training/day18.dart';
@@ -32,7 +33,7 @@ class MyApp extends StatelessWidget {
     return ProviderScope(
       child: MaterialApp(
         home: Scaffold(
-          appBar: AppBar(title: const Text("Flutter UI実装トレーニング")),
+          appBar: AppBar(title: const Text("Flutter 30days BootCamp")),
           body: ListView(children: [
             _GalleryItem(
               title: 'Day03 Hello World',
@@ -83,8 +84,12 @@ class MyApp extends StatelessWidget {
               builder: (context) => const Day11(),
             ),
             _GalleryItem(
-              title: 'Day14 カウンターアプリ(setState)',
-              builder: (context) => const Day14(title: "カウンターアプリ"),
+              title: 'Day13 カウンターアプリ(setState)',
+              builder: (context) => const Day13(title: "カウンターアプリ"),
+            ),
+            _GalleryItem(
+              title: 'Day14 PageView',
+              builder: (context) => const Day14PageView(),
             ),
             _GalleryItem(
               title: 'Day15 Todoアプリ(setState)',
