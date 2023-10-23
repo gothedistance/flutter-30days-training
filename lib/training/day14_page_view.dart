@@ -23,7 +23,7 @@ class Day14PageViewState extends State<Day14PageView> {
               controller: controller,
               onPageChanged: (value) {
                 setState(() {
-                  currentPage = value.toInt();
+                  currentPage = value;
                 });
               },
               children: <Widget>[

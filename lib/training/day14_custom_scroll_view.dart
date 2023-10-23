@@ -6,18 +6,14 @@ class Day14CustomScrollView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('CustomScrollView'),
-      ),
       body: CustomScrollView(
         slivers: [
           const SliverAppBar(
             pinned: true,
             centerTitle: true,
-            automaticallyImplyLeading: false,
             expandedHeight: 160.0,
             flexibleSpace: FlexibleSpaceBar(
-              title: Text('SliverAppBar'),
+              title: Text('CustomScrollView'),
               background: FlutterLogo(),
             ),
           ),
