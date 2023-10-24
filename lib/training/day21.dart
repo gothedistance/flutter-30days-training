@@ -6,12 +6,11 @@ import 'package:hooks_riverpod/hooks_riverpod.dart';
 class ItemList {
   final List<String> items;
   final int currentPage;
-  final int totalCount;
   final int perPage;
-  ItemList({required this.items, this.currentPage = 0, required this.totalCount, this.perPage = 30});
+  ItemList({required this.items, this.currentPage = 0, this.perPage = 30});
 
   ItemList copyWith({List<String>? items, int? currentPage}) {
-    return ItemList(items: items ?? this.items, currentPage: currentPage ?? this.currentPage, totalCount: totalCount);
+    return ItemList(items: items ?? this.items, currentPage: currentPage ?? this.currentPage);
   }
 }
 
@@ -20,7 +19,7 @@ class ItemListNotifier extends AsyncNotifier<ItemList> {
   FutureOr<ItemList> build() async {
     // dummyData
     final items = List.generate(30, (index) => "Item ${index + 1}");
-    return ItemList(items: items, totalCount: 100);
+    return ItemList(items: items);
   }
 
   Future<void> loadMore() async {
