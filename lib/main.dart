@@ -23,6 +23,7 @@ import 'training/day16.dart';
 import 'training/day18.dart';
 import 'training/day19.dart';
 import 'training/day20.dart';
+import 'training/day21.dart';
 
 void main() {
   runApp(const MyApp());
@@ -126,6 +127,10 @@ class MyApp extends StatelessWidget {
             _GalleryItem(
               title: 'Day20 JSON読み込み Riverpod',
               builder: (context) => const Day20(),
+            ),
+            _GalleryItem(
+              title: 'Day21 Riverpodで無限スクロール',
+              builder: (context) => const Day21(),
             ),
           ]),
         ),
