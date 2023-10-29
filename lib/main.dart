@@ -25,6 +25,7 @@ import 'training/day19.dart';
 import 'training/day20.dart';
 import 'training/day21.dart';
 import 'training/day21_scroll.dart';
+import 'training/day22.dart';
 
 void main() {
   runApp(const MyApp());
@@ -136,6 +137,10 @@ class MyApp extends StatelessWidget {
             _GalleryItem(
               title: 'Day21 Riverpodで無限スクロール(Scroll Position)',
               builder: (context) => const Day21ScrollControl(),
+            ),
+            _GalleryItem(
+              title: 'Day22 Riverpod.family',
+              builder: (context) => const Day22(),
             ),
           ]),
         ),
