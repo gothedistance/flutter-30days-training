@@ -7,10 +7,16 @@ class Day23UseFutureMemoized extends HookWidget {
   @override
   Widget build(BuildContext context) {
     final count = useState(0);
-    final snapshot = useFuture(useMemoized(() => Future.microtask(() {
-          print("aaa");
-          return "useFuture";
-        })));
+    final snapshot = useFuture(
+      useMemoized(
+        () => Future.microtask(
+          () {
+            print("aaa");
+            return "useFuture";
+          },
+        ),
+      ),
+    );
     return Scaffold(
       appBar: AppBar(),
       body: snapshot.hasData

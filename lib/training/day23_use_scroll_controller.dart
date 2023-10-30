@@ -36,8 +36,8 @@ class ItemListNotifier extends AsyncNotifier<ItemList> {
 
 final itemListProvider = AsyncNotifierProvider<ItemListNotifier, ItemList>(ItemListNotifier.new);
 
-class Day21ScrollControl extends HookConsumerWidget {
-  const Day21ScrollControl({super.key});
+class Day23UseScrollController extends HookConsumerWidget {
+  const Day23UseScrollController({super.key});
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {

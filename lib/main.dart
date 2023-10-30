@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_30days_training/training/day23_use_scroll_controller.dart';
 import 'package:hooks_riverpod/hooks_riverpod.dart';
 
 import 'training/day03.dart';
@@ -138,10 +139,6 @@ class MyApp extends StatelessWidget {
               builder: (context) => const Day21(),
             ),
             _GalleryItem(
-              title: 'Day21 Riverpodで無限スクロール(Scroll Position)',
-              builder: (context) => const Day21ScrollControl(),
-            ),
-            _GalleryItem(
               title: 'Day22 Riverpod.family',
               builder: (context) => const Day22(),
             ),
@@ -156,6 +153,10 @@ class MyApp extends StatelessWidget {
             _GalleryItem(
               title: 'Day23 useFuture with useMemoized',
               builder: (context) => const Day23UseFutureMemoized(),
+            ),
+            _GalleryItem(
+              title: 'Day23 無限スクロール(useScrollController)',
+              builder: (context) => const Day23UseScrollController(),
             ),
           ]),
         ),
