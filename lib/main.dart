@@ -25,7 +25,6 @@ import 'training/day18.dart';
 import 'training/day19.dart';
 import 'training/day20.dart';
 import 'training/day21.dart';
-import 'training/day21_scroll.dart';
 import 'training/day22.dart';
 import 'training/day23_use_future.dart';
 import 'training/day23_use_future_memo.dart';
