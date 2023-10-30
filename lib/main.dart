@@ -26,7 +26,9 @@ import 'training/day20.dart';
 import 'training/day21.dart';
 import 'training/day21_scroll.dart';
 import 'training/day22.dart';
-import 'training/day23_counter_app.dart';
+import 'training/day23_use_future.dart';
+import 'training/day23_use_future_memo.dart';
+import 'training/day23_use_state.dart';
 
 void main() {
   runApp(const MyApp());
@@ -146,6 +148,14 @@ class MyApp extends StatelessWidget {
             _GalleryItem(
               title: 'Day23 useState カウンターアプリ',
               builder: (context) => const Day23CounterApp(),
+            ),
+            _GalleryItem(
+              title: 'Day23 useFuture (don\'t do That!)',
+              builder: (context) => const Day23UseFuture(),
+            ),
+            _GalleryItem(
+              title: 'Day23 useFuture with useMemoized',
+              builder: (context) => const Day23UseFutureMemoized(),
             ),
           ]),
         ),
