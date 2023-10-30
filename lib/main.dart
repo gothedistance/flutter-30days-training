@@ -26,6 +26,7 @@ import 'training/day20.dart';
 import 'training/day21.dart';
 import 'training/day21_scroll.dart';
 import 'training/day22.dart';
+import 'training/day23_counter_app.dart';
 
 void main() {
   runApp(const MyApp());
@@ -141,6 +142,10 @@ class MyApp extends StatelessWidget {
             _GalleryItem(
               title: 'Day22 Riverpod.family',
               builder: (context) => const Day22(),
+            ),
+            _GalleryItem(
+              title: 'Day23 useState カウンターアプリ',
+              builder: (context) => const Day23CounterApp(),
             ),
           ]),
         ),
