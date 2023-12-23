@@ -104,17 +104,6 @@ class TodoListNotifier extends Notifier<List<Todo>> {
     state = [...state, todo];
   }
 
-  // Todo の削除
-  void removeTodo(String todoId) {
-    // stateがfinalなので、新しくリストを作成する必要があります。
-    //[]の中にfor文を入れて ifにあった条件を入れると、その条件にマッチする要素の配列が返ってくる
-    //PythonにおけるList内包表記に近い。
-    state = [
-      for (final todo in state)
-        if (todo.id != todoId) todo,
-    ];
-  }
-
   // Todo の完了ステータスの変更
   void toggle(String todoId) {
     state = [

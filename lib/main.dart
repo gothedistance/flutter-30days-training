@@ -126,15 +126,15 @@ class MyApp extends StatelessWidget {
               builder: (context) => const Day18(),
             ),
             _GalleryItem(
-              title: 'Day19 Todoアプリ(Riverpod)',
+              title: 'Day19 Todoアプリ(Notifier)',
               builder: (context) => Day19(),
             ),
             _GalleryItem(
-              title: 'Day20 JSON読み込み Riverpod',
+              title: 'Day20 Riverpod FutureProvider ',
               builder: (context) => const Day20(),
             ),
             _GalleryItem(
-              title: 'Day21 Riverpodで無限スクロール(Last Index)',
+              title: 'Day21 Todoアプリ(AsyncNotifier)',
               builder: (context) => const Day21(),
             ),
             _GalleryItem(
@@ -155,6 +155,10 @@ class MyApp extends StatelessWidget {
             ),
             _GalleryItem(
               title: 'Day23 無限スクロール(useScrollController)',
+              builder: (context) => const Day23UseScrollController(),
+            ),
+            _GalleryItem(
+              title: 'Day23 useEffect',
               builder: (context) => const Day23UseScrollController(),
             ),
           ]),
